@@ -55,13 +55,41 @@ void checking_vowel(char a){
 
 
 void factiorial_function(int x){
-    int num =1;
-    for(int i=x ;i>0;i--){
-        num*=i ;
+    int sum =1;
+    for(int num=x ;num>0;num--){
+         sum=sum*num;
 
     }
-    printf("The factorial value  is %d",num);
+    printf("The factorial value  is %d",sum);
 }
+
+
+int  multiplication_function(int num, int counter){
+    if(counter==0){
+        return 1 ;
+        
+    }
+    
+    multiplication_function(num,counter-1);
+    printf("%d\n",num*counter);
+      
+}
+
+
+int prime_function(int x,int y){
+    if(x == y){
+        return 1  ; 
+    }
+    if(x%y==0){
+        return 0 ;
+    }
+    return prime_function(x,y+1);
+
+
+
+}
+
+
 
 
 int main(){
@@ -103,6 +131,41 @@ int main(){
     scanf("%d",&v);
     factiorial_function(v);
 
+    printf("============================================\n");
+    printf("\n");
+    printf("___Multiplication of a number___\n");
+    int v1,c1 ;
+    printf("ENter a value : ");
+    scanf("%d",&v1);
+    printf("Enter a counter: ");
+    scanf("%d", &c1);
+    multiplication_function(v1,c1);
+
+
+    printf("\n=======================\n");
     
+    printf("judging a prime number\n");
+    printf("judging a number is a prime number or not\n");
+    int p , q=2;
+    printf("Enter a number : ");
+    scanf("%d", &p);
+    int res = prime_function(p,q);
+    if(res==0){
+        printf("Not a prime number");
+    }
+    if(res==1){
+        printf("IT's a prime number");
+    }
+
+
+
+
+
+
+
+
     return 0;
+
+    
+  
 }
