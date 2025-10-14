@@ -54,7 +54,14 @@ void checking_vowel(char a){
 }
 
 
+void factiorial_function(int x){
+    int num =1;
+    for(int i=x ;i>0;i--){
+        num*=i ;
 
+    }
+    printf("The factorial value  is %d",num);
+}
 
 
 int main(){
@@ -90,8 +97,12 @@ int main(){
     checking_vowel(b);
 
 
-    
-    
+    printf("__problem 22 solution__\n");
+    int v ;
+    printf("ENter a value : ");
+    scanf("%d",&v);
+    factiorial_function(v);
 
+    
     return 0;
 }
