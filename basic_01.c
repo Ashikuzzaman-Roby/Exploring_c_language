@@ -6,7 +6,7 @@ int test_arithmetic(int a , int b){
 int  test_function2(char ch){
     printf("%c",ch);
     return ch;
-};
+}
 
 
 
@@ -14,7 +14,7 @@ int  test_function2(char ch){
 
 int input_taking(int a , int b){
     return a*b;
-};
+}
 
 int main(){
     printf("__test function 1 \n");
@@ -47,4 +47,4 @@ int main(){
 
 
     
-};
+}
