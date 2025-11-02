@@ -67,6 +67,9 @@ int main() {
     // যদি আমরা print_and_modify(my_pointer) কল করতাম, তাহলে Segmentation Fault হতো।
     // তাই নিরাপত্তার জন্য my_pointer কে const char* হিসেবে ডিক্লেয়ার করা হয়েছে।
 
+
+    
+
     return 0;
 }
 
